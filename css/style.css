@@ -1,0 +1,265 @@
+html{
+    color: #fff;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.bg-size{
+    background-size: cover;
+}
+
+#home{
+    background-image: url(../image/bookHome.jpg);
+    height: 80vh;
+}
+
+.home-back,.home-nav{
+    padding: 10px;
+}
+
+.home-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-back{
+    font-size: 3rem;
+    margin: 16px 0;
+}
+
+.home-nav a{
+    font-size: 1.2rem;
+}
+
+.home-nav a:hover, .home-back:hover{
+    opacity: .6;
+}
+
+.home-title{
+    font-family: 'Space Mono', monospace;
+    font-size: 4.65rem;
+    text-align: center;
+    margin-top: 76px;
+}
+
+.page-title{
+    font-family: 'Space Mono', monospace;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+}
+
+.business, .novel{
+    background-color: rgba(43, 23, 22, .9);
+    display: flex;
+}
+
+.business{
+    padding: 100px 0 60px;
+    border-bottom: 1px solid #fff;
+}
+
+.novel{
+    padding: 100px 0 200px;
+}
+
+.business-book{
+    display: flex;
+    justify-content: space-between;
+}
+
+.business-book div{
+    width: 30%;
+}
+
+.novel-book{
+    display: flex;
+    justify-content: space-between;
+}
+
+.novel-book div{
+    width: 30%;
+}
+
+.business-book img, .novel-book img{
+    width: 100%;
+    height: 87%;
+    cursor: pointer;
+    box-shadow: 10px 7px 4px rgba(0, 0, 0, .3);
+}
+
+.business-book img:hover, .novel-book img:hover{
+    opacity: .8;
+}
+
+footer{
+    position: relative;
+    background-color: rgba(43, 23, 22, .9);
+}
+
+footer span{
+    position: absolute;
+    bottom: 0;
+    font-size: 0.825rem;
+}
+
+.footer-title{
+    font-size: 1.2rem;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    margin: 0;
+}
+
+.info{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.info-hide{
+    visibility: hidden;
+}
+
+.book-info{
+    visibility: hidden;
+}
+
+.book-info img{
+    display: block;
+    width: 100%;
+    height: 70vh;
+}
+
+.info-box{
+    display: block;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.active{
+    position: absolute;
+    top: 20px;
+    left: 25%;
+    visibility: visible;
+    width: 50%;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+}
+
+.close:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:600px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .bg-size{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 64%;
+    }
+    
+    .wrapper{
+        width: auto;
+    }
+    
+    .business, .novel{
+        display: block;
+    }
+    
+    .page-title{
+        font-family: 'Space Mono', monospace;
+        writing-mode: horizontal-tb;
+    }
+    
+    .business-book{
+        display: block;
+    }
+    
+    .business-book div{
+        margin-left: 15%;
+        width: 50%;
+    }
+    
+    .business-book img{
+        width: 150%;
+        height: 150%;
+    }
+    
+    .novel-book{
+        display: block;
+    }
+    
+    .novel-book div{
+        margin-left: 15%;
+        width: 50%;
+    }
+    
+    .novel-book img{
+        width: 150%;
+        height: 150%;
+    }
+    
+    .book-info img{
+        display: block;
+        width: 160%;
+        height: 50vh;
+    }
+    
+    .active{
+        position: absolute;
+        top: 73px;
+        left: 11%;
+        visibility: visible;
+        width: 50%;
+    }
+    
+    .info-box{
+        width: 146%;
+    }
+    
+    footer span{
+    position: absolute;
+    bottom: 0;
+    font-size: 0.6rem;
+}
+
+.footer-title{
+    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    margin: 0;
+}
+}
